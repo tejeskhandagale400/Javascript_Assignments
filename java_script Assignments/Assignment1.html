@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Temperature Conversion</h2>
+
+<p>Please input a temperature:</p>
+
+<input type="text" id="numb">
+
+<button type="button" onclick="myFunction()">Show Result</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    
+    if (isNaN(x) ) {
+
+        alert("Please enter a valid number");
+    } 
+    else {
+        x =(x-32)* 5 / 9;
+        document.getElementById("demo").innerHTML =x;
+      
+      
+    }
+  
+}
+</script>
+
+</body>
+</html> 
