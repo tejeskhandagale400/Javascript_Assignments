@@ -2,13 +2,6 @@
      
      
 
-print=function()
-{
-    console.log(person1);
-    console.log(person2);
-
-}
-
 
 
      person1={
@@ -44,7 +37,16 @@ print=function()
     profession:"Doctor"
 }
 
-print();
+
+
+print=function(objectPrint)
+{
+    console.log(objectPrint);
+ 
+
+}
+
+print(person1);
 
 
 
